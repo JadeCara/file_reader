@@ -1,4 +1,4 @@
-# Rust development environment setup template
+# Simple Rust file Reader with light error handling
 
 Adapted from # [Coursera Course - Rust Fundamentals](https://ds500.paiml.com/bootcamps/rust/ "Join the Bootcamp")
 
