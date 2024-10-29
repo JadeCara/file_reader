@@ -1,5 +1,27 @@
 # Simple Rust file Reader with light error handling
 
+Example usage:
+
+File found example:
+
+```
+cargo run helloworld.txt
+
+My path is helloworld.txt.
+Hello world
+```
+
+File not found example:
+
+```
+cargo run nosuchfile.txt
+
+My path is nosuchfile.txt.
+thread 'main' panicked at src/main.rs:16:21:
+File nosuchfile.txt not found: No such file or directory (os error 2)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+```
+
 Adapted from # [Coursera Course - Rust Fundamentals](https://ds500.paiml.com/bootcamps/rust/ "Join the Bootcamp")
 
 💡 Are you just looking for a 👉 [Rust template](https://github.com/alfredodeza/rust-template) to get started easily with a project? The [template](https://github.com/alfredodeza/rust-template) has everything you need!
