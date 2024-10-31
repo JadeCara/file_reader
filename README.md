@@ -1,11 +1,13 @@
-# Simple Rust file Reader with light error handling
+# Simple Rust file Reader with panic
 
 Example usage:
 
 File found example:
 
 ```
-cargo run helloworld.txt
+use file_reader::read_in;
+read_in(Some(String::from("helloworld.txt")));
+read_in(None); // defaults to helloworld.txt
 
 My path is helloworld.txt.
 Hello world
@@ -14,7 +16,8 @@ Hello world
 File not found example:
 
 ```
-cargo run nosuchfile.txt
+use file_reader::read_in;
+read_in(Some(String::from("nosuchfile.txt")));
 
 My path is nosuchfile.txt.
 thread 'main' panicked at src/main.rs:16:21:
