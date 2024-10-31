@@ -1,4 +1,4 @@
-# Simple Rust file Reader with panic
+# Simple Rust file reader with panic
 
 Example usage:
 
